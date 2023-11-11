@@ -7,15 +7,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Script Ideas</title>
     <!-- Link to external stylesheet -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+    <!-- Link to external JavaScript file -->
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
 </head>
 <body>
-    <!-- Display the script ideas -->
-    <div class="script-ideas">
+    <!-- Display the script ideas as cards -->
+    <div class="result-container">
         <h2>Generated Script Ideas:</h2>
-        {% for script_idea in script_ideas %}
-            <p>{{ script_idea }}</p>
-        {% endfor %}
+        <div class="card-container">
+            {% for script_idea in script_ideas %}
+                <div class="card" onclick="showCardDetail('{{ script_idea }}')">
+                    <div class="card-content">
+                        <div class="card-text">
+                            {{ script_idea }}
+                        </div>
+                        <button class="show-more-button" onclick="toggleCardText(this)">Show More</button>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
     </div>
+
+    <!-- Modal container -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()"></span>
+            <div id="modalText"></div>
+        </div>
+    </div>
+
+    <!-- Back button -->
+    <div class="back-button-container">
+        <a href="/">Back to Main Page</a>
+    </div>
+
+    <script>
+        function toggleCardText(button) {
+            var cardContent = button.parentElement.querySelector('.card-text');
+            var showMoreText = button.textContent === 'Show More';
+            
+            if (showMoreText) {
+                cardContent.style.maxHeight = 'none'; /* Show all text */
+                button.textContent = 'Show Less';
+            } else {
+                cardContent.style.maxHeight = '150px'; /* Show limited text */
+                button.textContent = 'Show More';
+            }
+        }
+    </script>
 </body>
 </html>

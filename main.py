@@ -1,13 +1,12 @@
 # main.py
 
-
 from flask import Flask, render_template, request
 import openai
 
 app = Flask(__name__)
 
 # Set your OpenAI API key (replace 'YOUR_OPENAI_API_KEY' with your actual key)
-openai.api_key = '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'
+openai.api_key = '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'
 
 # Define the route to render the form
 
@@ -37,21 +36,22 @@ def process_form():
 
 def generate_script_ideas(product_name, product_description):
     # Construct a prompt for the OpenAI API
-    prompt = f"Generate three script ideas for a testimonial video ad for {product_name}. The product is {product_description}."
+    prompt = f"Generate a script idea for a testimonial video ad for {product_name}. The product is {product_description}. Start is with the word Script idea: then new empty line before the generated script"
 
     # Make a request to the OpenAI API
     try:
         response = openai.Completion.create(
-            engine="text-davinci-002",  # Adjust the engine based on your preference
+            engine="text-davinci-003",  # You may use a different engine if available
             prompt=prompt,
-            max_tokens=150,  # Adjust the max_tokens based on your desired script length
-            n=1,  # Generate three script ideas
+            max_tokens=400,  # Adjust as needed
+            temperature=0.7,  # Adjust for creativity vs. accuracy
+            n=3  # Number of completions to generate
         )
 
         # Extract script ideas from the OpenAI API response
-        script_ideas = [choice['text'].strip()
+        script_ideas = [choice['text']
                         for choice in response['choices']]
-
+        print(script_ideas)
         return script_ideas
     except Exception as e:
         # Handle exceptions, e.g., API rate limits
