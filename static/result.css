@@ -43,6 +43,7 @@ body {
 
 .card:hover {
     background-color: #444444; /* Slightly lighter gray background on hover */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Added shadow on hover */
 }
 
 .card-content {

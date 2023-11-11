@@ -2,11 +2,14 @@
 
 from flask import Flask, render_template, request
 import openai
+from configparser import ConfigParser
 
 app = Flask(__name__)
+config = ConfigParser()
+config.read('config.ini')
 
 # Set your OpenAI API key (replace 'YOUR_OPENAI_API_KEY' with your actual key)
-openai.api_key = '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'
+openai.api_key = config.get('OpenAI', 'api_key')
 
 # Define the route to render the form
 
@@ -36,7 +39,7 @@ def process_form():
 
 def generate_script_ideas(product_name, product_description):
     # Construct a prompt for the OpenAI API
-    prompt = f"Generate a script idea for a testimonial video ad for {product_name}. The product is {product_description}. Start is with the word Script idea: then new empty line before the generated script"
+    prompt = f"Generate a script idea starting with the word Script idea: then an empty line for a testimonial video ad for {product_name}. The product is {product_description}."
 
     # Make a request to the OpenAI API
     try:
