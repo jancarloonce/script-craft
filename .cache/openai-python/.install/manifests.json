@@ -1,0 +1,9 @@
+{
+  "installPath": "/home/runner/Product-Script-Generator/.cache/openai-python/.install",
+  "binaries": {
+    "marzano": {
+      "name": "marzano",
+      "release": "8ecc902b-09b9-4f1b-9bd5-fa2ab306fc54"
+    }
+  }
+}

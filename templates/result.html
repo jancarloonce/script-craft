@@ -1,0 +1,21 @@
+<!-- templates/result.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Ideas</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Display the script ideas -->
+    <div class="script-ideas">
+        <h2>Generated Script Ideas:</h2>
+        {% for script_idea in script_ideas %}
+            <p>{{ script_idea }}</p>
+        {% endfor %}
+    </div>
+</body>
+</html>

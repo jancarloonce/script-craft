@@ -1,0 +1,29 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Script Generator</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Form to collect product information -->
+    <form method="post" action="{{ url_for('process_form') }}">
+        <!-- Heading -->
+        <h1>Product Script Generator</h1>
+        <!-- Label and input for product name -->
+        <label for="product_name">Product Name:</label>
+        <input type="text" id="product_name" name="product_name" required>
+        <br>
+        <!-- Label and textarea for product description -->
+        <label for="product_description">Product Description:</label>
+        <textarea id="product_description" name="product_description" rows="4" required></textarea>
+        <br>
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

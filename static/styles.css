@@ -1,0 +1,75 @@
+/* static/styles.css */
+
+/* Styles for the overall page */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styles for the form container */
+form {
+    background-color: #333333; /* Dark gray background */
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* Styles for the heading */
+h1 {
+    color: #ffffff; /* White color for the heading */
+}
+
+/* Styles for labels */
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff; /* White text */
+    font-weight: 500;
+    text-align: left;
+}
+
+/* Styles for text input and textarea */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #dfe1e5; /* Google Gray */
+    border-radius: 24px;
+    outline: none;
+    background-color: #333333; /* Dark gray background for text input */
+    color: #ffffff; /* White text */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+/* Styles for text input and textarea on hover */
+input[type="text"]:hover,
+textarea:hover {
+    background-color: #555555; /* Darker gray on hover */
+}
+
+/* Styles for the submit button */
+input[type="submit"] {
+    background-color: #333333; /* Dark gray background for the button */
+    color: #ffffff; /* White text */
+    padding: 12px 16px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+/* Styles for the submit button on hover */
+input[type="submit"]:hover {
+    background-color: #555555; /* Darker gray on hover */
+}
