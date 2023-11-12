@@ -8,12 +8,12 @@
     <title>Product Script Generator</title>
     <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
-    <!-- Link to FontAwesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-5VYXrCwZJcxmo9Xp8w+nlUJB3dt1xPKUs6OMz02y8A2z4JnMWXNSm9pBXtm0WWIf5cv99gFX8L5W1/M3kg11wA==" crossorigin="anonymous" />
+    <!-- Link to FontAwesome for icons without integrity attribute -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <!-- Form to collect product information -->
-    <form method="post" action="{{ url_for('process_form') }}">
+    <form id="productForm" method="post" action="{{ url_for('process_form') }}">
         <!-- Heading -->
         <h1>Product Script Generator</h1>
         <!-- Label and input for product name -->
@@ -25,11 +25,15 @@
         <textarea id="product_description" name="product_description" rows="4" required></textarea>
         <br>
         <!-- Submit button -->
-        <input type="submit" value="Submit">
+        <button type="submit" id="submit-button">Submit</button>
+        <!-- Loading spinner -->
+        <div id="loading-spinner" class="loading-spinner" style="display: none;">
+            <i class="fas fa-spinner fa-spin"></i>
+        </div>
     </form>
-    <!-- JavaScript for theme toggle -->
-    <script>
-        // Theme toggle is removed
-    </script>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
