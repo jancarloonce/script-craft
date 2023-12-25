@@ -3,6 +3,8 @@
 <br>PRODUCT-SCRIPT-GENERATOR</h1>
 <h3>◦ Developed with the software and tools below.</h3>
 
+
+
 <p align="center">
 <img src="https://img.shields.io/badge/GNU%20Bash-4EAA25.svg?style=flat-square&logo=GNU-Bash&logoColor=white" alt="GNU%20Bash" />
 <img src="https://img.shields.io/badge/tqdm-FFC107.svg?style=flat-square&logo=tqdm&logoColor=black" alt="tqdm" />
