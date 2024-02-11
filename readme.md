@@ -1,6 +1,6 @@
 <div align="center">
 <h1 align="center">
-<br>PRODUCT-SCRIPT-UI</h1>
+<br>script-craft: Crafting Testimonial Video Ads Made Simple with GPT-3</h1>
 <h3>◦ Developed with the software and tools below.</h3>
  
 
@@ -21,10 +21,10 @@
 <img src="https://img.shields.io/badge/JSON-000000.svg?style=flat-square&logo=JSON&logoColor=white" alt="JSON" />
 <img src="https://img.shields.io/badge/Flask-000000.svg?style=flat-square&logo=Flask&logoColor=white" alt="Flask" />
 </p>
-<img src="https://img.shields.io/github/license/jancarloonce/product-script-generator?style=flat-square&color=5D6D7E" alt="GitHub license" />
-<img src="https://img.shields.io/github/last-commit/jancarloonce/product-script-generator?style=flat-square&color=5D6D7E" alt="git-last-commit" />
-<img src="https://img.shields.io/github/commit-activity/m/jancarloonce/product-script-generator?style=flat-square&color=5D6D7E" alt="GitHub commit activity" />
-<img src="https://img.shields.io/github/languages/top/jancarloonce/product-script-generator?style=flat-square&color=5D6D7E" alt="GitHub top language" />
+<img src="https://img.shields.io/github/license/jancarloonce/script-craft?style=flat-square&color=5D6D7E" alt="GitHub license" />
+<img src="https://img.shields.io/github/last-commit/jancarloonce/script-craft?style=flat-square&color=5D6D7E" alt="git-last-commit" />
+<img src="https://img.shields.io/github/commit-activity/m/jancarloonce/script-craft?style=flat-square&color=5D6D7E" alt="GitHub commit activity" />
+<img src="https://img.shields.io/github/languages/top/jancarloonce/script-craft?style=flat-square&color=5D6D7E" alt="GitHub top language" />
 </div>
 
 ---
@@ -36,7 +36,7 @@
 - [📂 repository Structure](#-repository-structure)
 - [🚀 Getting Started](#-getting-started)
     - [🔧 Installation](#-installation)
-    - [🤖 Running product-script-generator](#-running-product-script-generator)
+    - [🤖 Running script-craft](#-running-script-craft)
 
 
 ---
@@ -44,7 +44,7 @@
 
 ## 📍 Overview
 
-The Product Script Generator is a web application built using Flask and OpenAI's GPT-3 API. It provides a user-friendly interface for users to input product information, including the product name and description. The app then leverages the power of OpenAI's GPT-3 to dynamically generate three script ideas for a testimonial video ad based on the provided product details.
+The script-craft: Crafting Testimonial Video Ads Made Simple with GPT-3 is a web application built using Flask and OpenAI's GPT-3 API. It provides a user-friendly interface for users to input product information, including the product name and description. The app then leverages the power of OpenAI's GPT-3 to dynamically generate three script ideas for a testimonial video ad based on the provided product details.
 
 ---
 
@@ -64,7 +64,7 @@ The Product Script Generator is a web application built using Flask and OpenAI's
 ## 📂 Repository Structure
 
 ```sh
-└── product-script-generator/
+└── script-craft/
     ├── .replit
     ├── main.py
     ├── poetry.lock
@@ -96,7 +96,7 @@ Please ensure you have the following dependencies installed on your system:
 
 1. Change to the project directory:
 ```sh
-cd product-script-generator
+cd script-craft
 ```
 
 2. Install the dependencies:
@@ -104,19 +104,9 @@ cd product-script-generator
 pip install -r requirements.txt
 ```
 
-### 🤖 Running product-script-generator
+### 🤖 Running script-craft
 
 ```sh
 python main.py
 ```
-
-If you are running on the main page of the project using this link: https://replit.com/@jancarloonce11/product-script-generator
-
-Click the run button and go to this link:
-
-```sh
-https://product-script-generator--jancarloonce11.repl.co/
-```
-
----
 
