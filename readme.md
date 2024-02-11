@@ -1,6 +1,6 @@
 <div align="center">
 <h1 align="center">
-<br>ScriptCraft: Crafting Testimonial Video Ads Made Simple with GPT-3</h1>
+<br>ScriptCraft: Crafting Testimonial Video Ads Made Simple with OpenAI</h1>
 <h3>◦ Developed with the software and tools below.</h3>
  
 
