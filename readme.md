@@ -44,7 +44,7 @@
 
 ## 📍 Overview
 
-The ScriptCraft: Crafting Testimonial Video Ads Made Simple with GPT-3 is a web application built using Flask and OpenAI's GPT-3 API. It provides a user-friendly interface for users to input product information, including the product name and description. The app then leverages the power of OpenAI's GPT-3 to dynamically generate three script ideas for a testimonial video ad based on the provided product details.
+ScriptCraft is a web application that simplifies the creation of testimonial video ads using the power of OpenAI's GPT-3 API. Built with Flask and designed for ease of use, ScriptCraft provides users with a user-friendly interface to input product information. Leveraging the capabilities of OpenAI's GPT-3, the application dynamically generates three script ideas for a testimonial video ad based on the provided product details.
 
 ---
 
