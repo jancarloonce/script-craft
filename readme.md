@@ -36,7 +36,7 @@
 - [📂 repository Structure](#-repository-structure)
 - [🚀 Getting Started](#-getting-started)
     - [🔧 Installation](#-installation)
-    - [🤖 Running script-craft](#-running-script-craft)
+
 
 
 ---
@@ -102,11 +102,5 @@ cd script-craft
 2. Install the dependencies:
 ```sh
 pip install -r requirements.txt
-```
-
-### 🤖 Running script-craft
-
-```sh
-python main.py
 ```
 
